@@ -57,7 +57,7 @@ env_test<-function(){
 #'@import reticulate
 call_python_program<-function(pyname){
   #package_path<-c('E:/work/sunhang/code/package_0708')
-  package_path_dir <- package_path()
+  package_path_dir <- packages_path()
   os<-import('os')
   os$chdir(package_path_dir)
   print(pyname)
